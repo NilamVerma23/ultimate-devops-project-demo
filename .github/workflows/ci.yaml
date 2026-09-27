@@ -53,7 +53,7 @@ jobs:
           run: |
             go install github.com/golangci/golangci-lint/cmd/golangci-lint@latest
             cd src/product-catalog
-            golangci-lint run ./src/product-catalog/...
+            golangci-lint run ./...
 
     docker:
         runs-on: ubuntu-latest
